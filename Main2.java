@@ -1,15 +1,20 @@
-class Vehicle
+abstract class Sample
 {
-	void stand()
+	abstract void mo();
+	abstract void no();
+}
+abstract class Tester extends Sample
+{
+	void mo()
 	{
-		System.out.println("Standing");
+		System.out.println("momo");
 	}
 }
-class Bike extends Vehicle
+class Developer extends Tester
 {
-	void run()
+	void no()
 	{
-		System.out.println("Running");
+		System.out.println("nono");
 	}
 }
 
@@ -19,14 +24,8 @@ class Main2
 {
 	public static void main(String[] args) 
 	{
-		System.out.println("***Upcasting***");
-		Vehicle v1 = new Bike();
-		v1.stand();
-		System.out.println("***Downcasting***");
-		Bike b1 = (Bike) v1;
-		b1.stand();
-		b1.run();
-
-
+		Developer d1 = new Developer();
+		d1.mo();
+		d1.no();
 	}
 }

@@ -1,0 +1,17 @@
+class Sector 
+{
+	static void area()
+	{
+		int r=7;
+		double deg=30.5;
+		double result = 1/2d*r*r*deg;
+		System.out.println(result);
+
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("Main Starts");
+		area();
+		System.out.println("Main Ends");
+	}
+}

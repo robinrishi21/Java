@@ -1,0 +1,17 @@
+class Parallelogram 
+{
+	static void area()
+	{
+		int b =8;
+		int h =9;
+		int result =b*h;
+		System.out.println(result);
+
+	}
+	public static void main(String[] args) 
+	{
+		System.out.println("Main Starts");
+         area();
+		System.out.println("Main Ends");
+	}
+}
